@@ -1,2 +1,5 @@
-# PWEB
-Matéria Programação para Web - Fatec Sorocaba 2023
+## Programação para Web [PWEB] 📗
+
+Olá! Esse é o repositório para a matéria de PRogramação para Web, da Fatec Sorocaba, 1/2023, com a professora Denilse.
+Aqui você encontrará as atividades que eu desenvolverei durante o semestre.
+
