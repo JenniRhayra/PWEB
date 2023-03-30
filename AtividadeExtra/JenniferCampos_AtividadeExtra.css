@@ -1,0 +1,80 @@
+.container {
+	font: Arial, Helvetica, sans-serif;
+    width: 500px;
+    height: 500px;
+}
+
+/*  420px ou menor */
+@media (min-width: 0px) and (max-width: 420px) {
+    .container{
+        background-color: gray;
+    }
+
+    h1::after{
+        content: "Cinza";
+    }
+}
+
+/* 768px ou menor  */
+@media (min-width: 421px) and (max-width: 768px) {
+    .container{
+        background-color: orange;
+    }
+    h1::after{
+        content: "Laranja";
+    }
+}
+
+/*  1024px or menor  */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container{
+        background-color: pink;
+    }
+
+    h1::after{
+        content: "Rosa";
+    }
+}
+
+/*  1080px or menor  */
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .container{
+        background-color: orangered;
+    }
+
+    h1::after{
+        content: "Vermelho";
+    }
+}
+
+/*  1366px or menor  */
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .container{
+        background-color: rgb(92, 133, 255);
+    }
+
+    h1::after{
+        content: "Azul";
+    }
+}
+
+/*  1920px or menor  */
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .container{
+        background-color: rgb(249, 249, 122);
+    }
+
+    h1::after{
+        content: "Amarelo";
+    }
+}
+
+
+
+
+
+
+
+
+
+
