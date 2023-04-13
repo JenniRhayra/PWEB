@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 7 - Pedra, papel, tesoura</title>
+    <script src="JenniferCampos_Atividade7.js"></script>
+    <style>
+        body{
+            background-color: #F7F5EC;
+            font-family: 'Jost', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 10px;
+            padding: 0;
+            max-width: vhw;
+            text-align: center;
+            margin-bottom: 10%;
+        }
+
+        button{
+            border-radius: 5px;
+            box-shadow: 1px 1px 23px 2px rgb(210, 216, 202);
+        }
+    </style>
+</head>
+<body>
+    <h1>JOGO - Pedra, Papel, Tesoura</h1>
+    <h3>Faça sua escolha</h3>
+    <button id="pedra" onclick="alert(play('1'))">PEDRA</button> 
+    <button id="papel" onclick="alert(play('2'))">PAPEL</button>
+    <button id="tesoura" onclick="alert(play('3'))">TESOURA</button>
+    <p><i>Você jogará contra o computador</i></p>
+</body>
+</html>
