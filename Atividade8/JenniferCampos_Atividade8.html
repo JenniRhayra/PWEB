@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 8 - Criando uma pesquisa</title>
+    <script src="JenniferCampos_Atividade8.js"></script>
+    <style>
+        .container{
+            position: static;
+            top: 30px;
+            left: 10px;
+            align-items: center;
+            margin: 0 auto;
+            bottom: 50%;
+        }
+
+        body{
+            background-color: #f8f8f8;
+            font-family: 'Jost', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 10px;
+            text-align: left;
+            line-height: 1pt;
+            display: flex;
+            justify-content: center
+        }
+
+        h1{
+            text-align: center;
+            margin: 50px;
+            line-height: 15pt;
+            font-weight:bold;
+        }
+
+        button{
+            border-radius: 5px;
+            box-shadow: 1px 1px 10px 2px rgb(204, 205, 205);
+            background-color:rgb(6, 167, 159);
+            color:rgb(255, 255, 255);
+            border: none;
+            width: 100px; 
+            height: 30px;
+            font-weight:bold;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>PESQUISA<br />Lançamento de Filme</h1>
+            <p>Informe a sua idade: </p>
+            <input id="idade" name="idade" value="" type="text">
+            <p>Informe seu sexo: </p>
+            <select id=sexo>
+                <option value="f">Feminino</option>
+                <option value="m">Masculino</option>
+            </select>
+            <p>Qual a sua opinião sobre o filme? Informe o número conforme: </p>
+            <select id="opiniao">
+                <option value="4">4. Ótimo</option>
+                <option value="3">3. Bom</option>
+                <option value="2">2. Regular</option>
+                <option value="1">1. Péssimo</option>
+            </select>
+            <br><br>
+            <button onclick = "enviar()">Enviar</button>
+        </div>
+    </section>
+</body>
+</html>
