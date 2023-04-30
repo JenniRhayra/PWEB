@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 11</title>
+    <script src="JenniferCampos_Atividade11.js"></script>
+    <style>
+        .container{
+            position: static;
+            top: 30px;
+            left: 10px;
+            align-items: center;
+            margin: 0 auto;
+            bottom: 50%;
+        }
+
+        body{
+            background-color: #f8f8f8;
+            font-family: 'Jost', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 10px;
+            text-align: left;
+            line-height: 1pt;
+            display: flex;
+            justify-content: center
+        }
+
+        h1{
+            text-align: center;
+            margin: 50px;
+            line-height: 15pt;
+            font-weight:bold;
+        }
+
+        button{
+            border-radius: 5px;
+            box-shadow: 1px 1px 10px 2px rgb(204, 205, 205);
+            background-color:rgb(177, 1, 163);
+            color:rgb(255, 255, 255);
+            border: none;
+            width: 100px; 
+            height: 30px;
+            font-weight:bold;
+            margin-top: 30px;
+        }
+
+        #nomeCor{
+            width: 600px; 
+            height: 18px;
+        }
+
+        #banco{
+            width: 200px; 
+            height: 18px;
+        }
+
+        #numConta,#saldo,#saldoEsp,#poupJuros{
+            width: 100px; 
+            height: 18px;
+        }
+
+        #dtVenc{
+            width: 150px; 
+            height: 18px;
+        }
+
+        #base,#altura{
+            width: 100px; 
+            height: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>Cálculo da área<br />RETÂNGULO</h1>
+            <p>Informe o valor da base: &nbsp;&nbsp;<input type="text" value="" id="base"></p>
+            <p>Informe o valor da altura: <input type="text" value="" id="altura"></p>
+            <button onclick="callFunctionRet()">Enviar</button>
+
+            <h1>Tipos de<br />CONTA</h1>
+            <p>Informe o nome do correntista: <input type="text" value="" id="nomeCor"></p>
+            <p>Banco: <input type="text" value="" id="banco">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Número da conta: <input type="text" value="" id="numConta"></p>
+            <p>Saldo: <input type="text" value="" id="saldo">
+            <p>Saldo Especial:  <input type="text" value="" id="saldoEsp"></p>
+            <p>Poupança com Juros: <input type="text" value="" id="poupJuros"></p>
+            <p>Data de Vencimento: <input type="text" value="" id="dtVenc"></p>
+            <button onclick="callFunctionConta()">Verificar</button>
+        </div>
+    </section>
+</body>
+</html>
