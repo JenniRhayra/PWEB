@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jennifer Campos - Atividade 14</title>
+    <script src="JenniferCampos_Atividade14.js"></script>
+    <style>
+        .container{
+            position: static;
+            top: 30px;
+            left: 10px;
+            align-items: center;
+            margin: 0 auto;
+            bottom: 50%;
+        }
+
+        body{
+            background-color: #f8f8f8;
+            font-family: 'Jost', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        h1{
+            text-align: center;
+            margin: 50px;
+            line-height: 15pt;
+            font-weight:bold;
+        }
+
+        #limpar, #enviar{
+            border-radius: 2px;
+            box-shadow: 1px 1px 10px 2px rgb(204, 205, 205);
+            background-color:rgb(1, 104, 177);
+            color:rgb(255, 255, 255);
+            border: none;
+            width: 100px; 
+            height: 30px;
+            font-weight:bold;
+            margin-top: 30px;
+        }
+
+        #pesquisa{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="form1" method="POST" name="form1" id="form1" onsubmit="return validar();" onreset="return limpar()">
+        <div id="home" width=200 heigth=200 align=left class="container">
+            <h1>PESQUISA - ATIVIDADE 14</h1>
+            Nome:
+            <input name="nome" type="text" id="nome" size="50" maxlength="150">
+            <br>
+            <br> E-mail:
+            <input name="email" type="email" id="email" size="50" maxlength="100">
+            <br>
+            <br> Comentário:
+            <br>
+            <textarea name="comentario" cols="50" rows="8" id="comentario" value="" input></textarea>
+            <br>
+            <div id="pesquisa">
+                <br><p><strong>Pesquisa:</strong></p>
+                Primeira vez nessa página?
+                <br>
+                <input type="radio" name="sim" id="sim" value="1"> Sim   
+                <input type="radio" name="nao" id="nao" value="2"> Não
+                <br><br><br>
+                <input name="enviar" id="enviar" type="submit" form="form1" value="Enviar">
+                <input name="limpar" id="limpar" type="reset" form="form1" value="Limpar" >
+            </div>
+        </div>
+    </form>
+</body>
+</html>
