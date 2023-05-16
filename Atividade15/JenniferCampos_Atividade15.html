@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 15</title>
+    <script src="JenniferCampos_Atividade15.js"></script>
+    <style>
+        .container{
+            position: static;
+            top: 30px;
+            left: 10px;
+            align-items: center;
+            margin: 0 auto;
+            bottom: 50%;
+        }
+
+        body{
+            background-color: #f8f8f8;
+            font-family: 'Jost', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        h1{
+            text-align: center;
+            margin: 50px;
+            line-height: 15pt;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cursos FATEC</h1>
+        <select id="selecao" onchange = "openWindow()">
+            <option value="" selected></option> 
+            <option value="1"> Análise e Desenvolvimento de Sistemas</option>
+            <option value="2"> Eletrônica Automotiva</option>
+            <option value="3"> Fabricação Mecânica</option>
+            <option value="4"> Gestão da Qualidade</option>
+            <option value="5"> Gestão Empresarial (EaD)</option>
+            <option value="6"> Logística</option>
+            <option value="7"> Manufatura Avançada</option>   
+            <option value="8"> Polímeros</option>
+            <option value="9"> Processos Metalúrgicos</option> 
+            <option value="10"> Projetos Mecânicos</option>
+            <option value="11"> Sistemas Biomédicos</option>
+        </select>
+    </div>
+</body>
+</html>
