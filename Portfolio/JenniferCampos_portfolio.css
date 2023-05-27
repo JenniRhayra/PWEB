@@ -1,0 +1,751 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    border: none;
+}
+
+body{
+    width: 100%;
+    height: 10vh;
+    background: url(image/fundo_1.png);
+    background-size: cover;
+    min-width: 370px;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 99;
+}
+
+header .menu ul{
+    display: flex;
+}
+
+header .menu ul li{
+    padding: 0 20px;
+    list-style: none;
+}
+
+header .menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    transition: 0.5s ease;
+}
+
+header .menu ul li a:hover{
+    color: #73bc91;
+    font-weight: bold;
+}
+
+header .menu-mobile{
+    display: none;
+}
+
+header .btn-mobile{
+    display: none;
+}
+
+/*------- main home ---------*/
+#home .container{
+    width: 100%;
+    height: 100%;
+}
+
+#home .container .icons{
+    width: 10%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+    position: absolute;
+    z-index: 9;
+}
+
+#home .container .icons ion-icon{
+    padding: 30px 0;
+    font-size: 2rem;
+    color: #000000;
+    transition: 0.5s ease;
+}
+
+#home .container .icons ion-icon:hover{
+    color: #73bc91;
+}
+
+#home .container .title{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 100px;
+}
+
+#home .container .title h1{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 8rem;
+}
+
+#home .destaque {
+    font-weight: bold;
+    line-height: 15pt;
+    letter-spacing: 15px;
+}
+
+#home .container .title h2{
+    color: rgb(0, 0, 0);
+    font-family: 'Licorice';
+    font-size: 4rem;
+    line-height: 70pt;
+    align-items: right;
+}
+
+#home .container .title p{
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+#home .container .title_hab{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 100px;
+}
+
+#home .container .title_hab p{
+    color: #000000;
+    width: 500px;
+}
+
+#home .container .box-title{
+    width: 500px;
+    height: 37vh;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+#home .container .box-title .b1{
+    width: 400px;
+    height: 15px;
+    background: #000000;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#home .container .box-title .b2{
+    width: 320px;
+    height: 15px;
+    background: #73bc91;
+    border-radius: 5px;
+}
+
+#home .container .box-title .b3{
+    width: 300px;
+    height: 15px;
+    background: #73bc91;
+    border-radius: 5px;
+}
+
+#home .container .box-title .b4{
+    width: 160px;
+    height: 15px;
+    background: #73bc91;
+    border-radius: 5px;
+}
+
+#home .container .box-title .b5{
+    width: 152px;
+    height: 15px;
+    background: #73bc91;
+    border-radius: 5px;
+}
+
+#home .container .box-title .b6{
+    width: 128px;
+    height: 15px;
+    background: #73bc91;
+    border-radius: 5px;
+}
+
+/*------- sobre mim ---------*/
+#about {
+    width: 100%;
+    height: 100vh;
+    background: url(image/fundo_2.png);
+    background-size: cover;
+    justify-content: space-between;
+}
+
+
+#about h1{
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8%;
+}
+
+#about span{
+    font-weight: bold;
+    display: inline;
+}
+
+#about .carousel{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 2%;
+}
+
+#about .carousel::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-top: 2.5px dashed #9c9b9b;
+}
+
+#about .none-card{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#about .none-card p{
+    width: 80%;
+    text-align: center;
+    font-size: 13px;
+}
+
+#about .none-card::before{
+    content: '';
+    box-sizing: border-box;
+    height: 0px;
+    width: 40px;
+    border-top: 2.5px dashed #9c9b9b;
+    transform: rotate(90deg) translateX(140%);
+}
+
+#about .none-card .title_img{
+    font-size: 25px;
+    font-weight: 400;
+    color:#2A5732;
+    margin-bottom: 50px;
+}
+
+#about .none-card img{
+    height: 180px;
+    display: flex;
+}
+
+/*------- portfólio ---------*/
+#port .container{
+    width: 100%;
+    height: 100vh;
+    background: url(image/fundo_3.png);
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: center;
+}
+
+#port .container .title{
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    padding-top: 10%;
+    margin: 0 auto 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#port .container span{
+    font-weight: bold;
+    display: inline;
+}
+
+#port .container input[type=radio]{
+    display: none;
+}
+
+#port .container .card{
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0 0 10px 0 rgba(84, 85, 85, 0.5);
+    transition: 0.4s ease;
+    cursor: pointer;
+    border-radius: 70px;
+    margin-left: 3%;
+}
+
+#port .container .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 70px;
+}
+
+#port .container .card h1{
+    position: absolute;
+    z-index: 9;
+    color: #ffffff;
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+#port .container .card p{
+    position:absolute;
+    z-index: 9;
+    width: 80%;
+    color: #fff;
+    top: 27%;
+    text-align: justify;
+    background-color: #353434d7;
+    font-size: 15px;
+}
+
+#port .container .card ul{
+    position:absolute;
+    z-index: 9;
+    color: #fff;
+    bottom: 37%;
+    text-align: justify;
+    line-height: 80%;
+}
+
+#port .container .card a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+#port .container .card button{
+    position: absolute;
+    z-index: 9;
+    bottom: 10%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: #000000;
+    background: #73bc91;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#port .container .cards{
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-1{
+    transform: translateX(60%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2{
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+/*------- contato ---------*/
+#contato .container{
+    width: 100%;
+    height: 100vh;
+    background: url(image/fundo_4.png);
+    background-size: cover;
+    padding-left: 10%;
+}
+
+#contato .container h1{
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: left;
+    width: 100%;
+    padding-top: 10%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contato .container .destaque{
+    font-weight: bold;
+    display: inline;
+}
+
+#contato .container .content-contact{
+    width: 80%;
+    margin: 0 auto;
+    padding: 2% 0;
+    display: inline;
+    justify-content: space-between;
+    color: #000000;
+}
+
+
+#contato .content-contact .linha{
+    width: 350px;
+    height: 3px;
+    background: #050505;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#contato .container .content-contact ion-icon{
+    font-size: 2rem;
+    padding: 20px 0;
+}
+
+#contato .content-contact a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#contato .content-contact a:hover {
+    color:#73bc91;
+}
+
+#contato .content-contact span{
+    font-size: 1.2rem;
+    padding: 5px 0;
+}
+
+/*------- rodape ---------*/
+footer{
+    width: 100%;
+    height: 80px;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+    background-color: #000000;
+    position: relative;
+    top: -80px;
+}
+
+footer a{
+    color: #fff;
+}
+
+@media screen and (max-width: 1167px){
+    body {
+        height: 101vh;
+    }
+}
+/*------- responsive ---------*/
+@media screen and (max-width: 1069px){
+    #home .container .icons ion-icon{
+        font-size: 1.5rem;
+    }
+    #port .container .card h1{
+        font-size: 5rem;
+    }
+    #port .container .card p{
+        font-size: 0.8rem;
+    }
+    body{
+        background: url(image/fundo_1_2.png);
+    }
+    #home .container .icons{
+        padding: 0 20px;
+    }
+    #home .container .title{
+        align-items: center;
+        height: 35vh;
+    }
+    #home .container .title h1{
+        font-size: 5rem;
+    }
+    #home .container .title h2{
+        font-size: 2.2rem;
+    }
+    #about .container .title{
+        align-items: center;
+    }
+    #about .container .box-title{
+        width: 100%;
+        height: 40vh;
+    }
+    #about .container .box-title .b1{
+        width: 100%;
+    }
+    #about .container .box-title .b2{
+        width: 90%;
+    }
+    #about .container .box-title .b3{
+        width: 80%;
+    }
+    #about .container .box-title .b4{
+        width: 87%;
+    }
+    #about .container .box-title .b5{
+        width: 76%;
+    }
+    #about .container .box-title .b6{
+        width: 70%;
+    }
+    #contact .container .content-contact{
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #contact .content-contact h1{
+        font-size: 1.5rem;
+    }
+    #contact .content-contact ion-icon{
+        font-size: 1.5rem;
+        padding: 5px 0;
+    }
+    #contact .content-contact span{
+        font-size: 1rem;
+        padding: 5px 0;
+    }
+}
+
+@media screen and (max-width: 913px){
+    #home .container .title h2 {
+        font-size: 2.2rem;
+        line-height: 40pt;
+    }
+    #home .container .box-title {
+        width: 57%;
+    }
+    #home .container .title_hab {
+        align-items: center;
+        padding: 0px 62px;
+    }
+    #home .container .title_hab p {
+        width: auto;
+    }
+    #about .container .title p{
+        width: 100%;
+        margin-top: 30px;
+    }
+    #about .container .title{
+        align-items: center;
+        padding: 10px 60px;
+    }
+    #about .carousel{
+        width: 100%;
+        overflow-x: scroll;
+        display: flex;
+    }
+    #about .carousel::after{
+        display: none;
+    }
+    #about .none-card::after{
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 35px;
+        display: block;
+        height: 5px;
+        width: 100%;
+        border-top: 2.5px dashed #9c9b9b;
+    }
+    #about .carousel img{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 750px){
+    body{
+        background: url(image/fundo_1_2.png);
+        overflow-x: hidden;
+    }
+    header{
+        background: none;
+        padding: 10px;
+    }
+    header .menu{
+        display: none;
+    }
+    header .btn-mobile{
+        display: block;
+        cursor: pointer;
+        margin-left: 90%;
+    }
+    header .btn-mobile ion-icon{
+        color:#73bc91;
+        font-size: 1.5rem;
+    }
+    header .menu-mobile.show{
+        width: 45%;
+        box-shadow: 0 0 15px 0 #fff;
+        position: absolute;
+        top: 35px;
+        border-radius: 46px;
+        background: #73bc91;
+        transition: all 0.5s ease;
+        display: block;
+        left: 63%;
+        font-size: 14px;
+        line-height: 15%;
+    }
+    header .menu-mobile ul{
+        text-align: center;
+    }
+    header .menu-mobile ul li{
+        list-style: none;
+        padding: 12px 0;
+    }
+    header .menu-mobile ul li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    #home .container .icons{
+        padding: 0 20px;
+        height: 115vh;
+    }
+    #home .container .icons ion-icon {
+        padding: 17px 0;
+    }
+    #home .container .title{
+        align-items: center;
+        padding: 0px 50px;
+    }
+    #home .container .title p{
+        text-align: center;
+    }
+    #home .container .title h1{
+        font-size: 5rem;
+    }
+    #home .container .title h2 {
+        font-size: 2.2rem;
+        line-height: 50px;
+    }
+    #home .container .title_hab{
+        padding: 0 20px;
+    }
+    #home .container .title_hab p{
+        width: 80%;
+    }
+    #home .container .box-title{
+        width: 80%;
+        height: 40vh;
+        margin-top: 7px;
+    }
+    #home .container .box-title .b1 {
+        width: 100%;
+    }
+    #home .container .box-title .b2 {
+        width: 80%;
+    }
+    #home .container .box-title .b3 {
+        width: 75%;
+    }
+    #home .container .box-title .b4 {
+        width: 40%;
+    }
+    #home .container .box-title .b5 {
+        width: 38%;
+    }
+    #home .container .box-title .b6 {
+        width: 32%;
+    } 
+    #about .container .title p{
+        width: 100%;
+        margin-top: 30px;
+    }
+    #about .container .title{
+        align-items: center;
+        padding: 10px 60px;
+    }
+    #about .carousel{
+        width: 100%;
+        overflow-x: scroll;
+        display: flex;
+    }
+    #about .carousel::after{
+        display: none;
+    }
+    #about .none-card::after{
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 35px;
+        display: block;
+        height: 5px;
+        width: 100%;
+        border-top: 2.5px dashed #9c9b9b;
+    }
+    #about .carousel img{
+        align-items: center;
+    }
+    
+    #port .container .card h1{
+        font-size: 4rem;
+        top: 5%;
+    }
+    #port .container .card p{
+        font-size: 0.7rem;
+    }
+    #contact .container .content-contact{
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #contact .content-contact h1{
+        font-size: 1.5rem;
+    }
+    #contact .content-contact ion-icon{
+        font-size: 1.5rem;
+        padding: 5px 0;
+    }
+    #contact .content-contact span{
+        font-size: 1rem;
+        padding: 5px 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #port .container .card h1{
+        font-size: 3rem;
+        top: 9%;
+    }
+}
